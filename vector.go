@@ -101,7 +101,7 @@ func (v Vector) Norm() float64 {
 	return math.Sqrt(sum)
 }
 
-func (v Vector) isEqual(other Vector) (bool, error) {
+func (v Vector) IsEqual(other Vector) (bool, error) {
 	if v.Len() != other.Len() {
 		return false, errors.New("diff dims")
 	}
